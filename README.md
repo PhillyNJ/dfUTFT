@@ -1,7 +1,8 @@
 # dfUTFT
-This document provides information on the dfUTFTFork library. The dfUTFTFork is a fork of the UTFT Library by Henning Karlsen. The original UTFT library is well written and works with a number of TFT drivers. The UFTF library has a number of limitations when creating fonts. For example, with the original UTFT library, all fonts MUST have a character width that is dividable by 8 (i.e. 8, 16, and 24 etc...). You have 2 choices to create fonts; 1, by hand or 2 with the online Font Maker, which converts an image into a font array. Both, are not easy to do and are time consuming.
+The dfUTFTFork is a fork of the UTFT Library by Henning Karlsen. The original UTFT library is well written and works with a number of TFT drivers. The UFTF library has a number of limitations when creating fonts. For example, with the original UTFT library, all fonts MUST have a character width that is dividable by 8 (i.e. 8, 16, and 24 etc...). You have 2 choices to create fonts; 1, by hand or 2 with the online Font Maker, which converts an image into a font array. Both, are not easy to do and are time consuming.
 
-So I set out to modify the UTFT library with work with The Dot Factory. “The Dot Factory is a small, GPL, open source tool intended to generate the required C language information to store many fonts and images, as efficiently as possible, on a microcontroller”. Basicly, if you have the font installed on your window PC, you can create a Font to use with the UFTF library.
+So I set out to modify the UTFT library to with work with The Dot Factory. “The Dot Factory is a small, GPL, open source tool intended to generate the required C language information to store many fonts and images, as efficiently as possible, on a microcontroller”. Basicly, if you have the font installed on your window PC, you can create a Font to use with the UFTF library.
+
 Important Notes
 
 *  The dfTFTFork library can co-exist with existing UTFT fonts. You just call different functions.
