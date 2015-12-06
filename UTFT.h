@@ -166,13 +166,14 @@ class UTFT
 		void lcdOn();
 		void setContrast(char c);
     
-        // pvallone added
-        void setFont(const unsigned char* f, const unsigned int (*d)[3], byte c);
-        void setCharMap(const unsigned char* cm);
-        void prntChar(char ch, int x, int y);
-        void prnt(char *st, int x, int y,int deg=0);
-        void rtChar (byte c, int x, int y, int pos, int deg);
-        // pvallone end
+        	// dfFork added
+        	void setFont(const unsigned char* f, const unsigned int (*d)[3], byte c);
+        	void setCharMap(const unsigned char* cm);
+        	void prntChar(char ch, int x, int y);
+        	void prnt(char *st, int x, int y,int deg=0);
+        	void rtChar (byte c, int x, int y, int pos, int deg);
+        	void scroll(int y);
+        	// dfFork end
 		int  getDisplayXSize();
 		int	 getDisplayYSize();
 
