@@ -2641,3 +2641,14 @@ unsigned int UTFT::reverseBits(unsigned int num)
     
     return reverse_num;
 }
+void UTFT::scroll(int y){
+  
+    int16_t pix = y;
+    
+    
+    cbi(P_CS, B_CS);
+    LCD_Write_COM_DATA(0x61,0x0003);
+    LCD_Write_COM_DATA(0x6A, pix);
+    sbi(P_CS, B_CS);
+    
+}
